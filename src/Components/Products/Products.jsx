@@ -1,8 +1,10 @@
+//Imports
 import React from "react";
 import "./Products.css";
 import Product from "../Product/Product";
 
 const Products = (props) => {
+  //Products array
   const ProductArray = [
     {
       id: 1,
@@ -34,7 +36,8 @@ const Products = (props) => {
     },
   ];
 
-  const clickHandler = (id) => {
+  //Add product to cart function
+  const AddToCartHandler = (id) => {
     let array = [...props.cartListArray];
     let product = ProductArray.filter((i) => i.id === id);
     array.push(product[0]);
@@ -72,7 +75,7 @@ const Products = (props) => {
       <div className="product-con-content">
         {ProductArray.map((i) => (
           <Product
-            click={() => clickHandler(i.id)}
+            click={() => AddToCartHandler(i.id)}
             key={i.id}
             title={i.title}
             price={i.price}

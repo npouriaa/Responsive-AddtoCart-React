@@ -1,3 +1,4 @@
+//Imports
 import React, { Component } from "react";
 import "./Header.css";
 import search_icon from "../../Images/search-i.svg";
@@ -5,7 +6,6 @@ import cart_icon from "../../Images/cart_mini-i.svg";
 
 class Header extends Component {
   render() {
-    // console.log('HEADER RENDER')
     return (
       <div className="header">
         <nav>

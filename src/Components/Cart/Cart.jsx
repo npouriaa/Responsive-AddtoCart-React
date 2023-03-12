@@ -1,10 +1,13 @@
-import React, { useEffect, useRef, useState } from "react";
+///Imports
+import React, { useEffect, useState } from "react";
 import "./Cart.css";
-import d from "../../Images/p-1.jpg";
 
 const Cart = (props) => {
+
+  // Total price state
   const [price, setPrice] = useState(0);
 
+  // Total price calculator funciton
   const calculateTotal = () => {
     let totalPrice = 0;
     props.cartProducts.map((item) => {
@@ -13,8 +16,7 @@ const Cart = (props) => {
     });
   };
 
-  const inputRef = useRef(null)
-
+  //This useEffect calculate total price any time the component render
   useEffect(() => {
     calculateTotal();
   });

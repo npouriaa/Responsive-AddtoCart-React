@@ -1,9 +1,9 @@
+//Imports
 import React from "react";
 import "./Product.css";
 
-
 const Products = (props) => {
-  
+
   let {title , price , imgSrc , click} = props
   
   return (
