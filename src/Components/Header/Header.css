@@ -37,19 +37,6 @@ nav {
   padding: 10px;
 }
 
-button span{
-  height: 2px;
-  background-color: #000;
-}
-
-button :nth-child(1){
-  width: 19px;
-}
-
-button :nth-child(2){
-  width: 15px;
-}
-
 ul{
   position: absolute;
   right: 0;

@@ -9,10 +9,6 @@ class Header extends Component {
     return (
       <div className="header">
         <nav>
-          <button className="btnStyle">
-            <span></span>
-            <span></span>
-          </button>
           <ul>
             <li className="search-li">
               <img src={search_icon} alt="" />
